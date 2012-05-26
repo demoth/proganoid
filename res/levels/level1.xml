@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<level name="level1"
+       back="res/back1.jpg"
+       message="hello and welcome to the first level">
+        <brick id="1" x="120" y="50" type="empty"/>
+        <brick id="2" x="160" y="50" type="empty"/>
+        <brick id="3" x="200" y="50" type="empty"/>
+        <brick id="4" x="240" y="50" type="empty"/>
+        <brick id="5" x="280" y="50" type="empty"/>
+        <brick id="6" x="320" y="50" type="empty"/>
+        <brick id="7" x="360" y="50" type="empty"/>
+        <brick id="8" x="400" y="50" type="empty"/>
+</level>
