@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<types>
+    <!--text-->
+    <type id="0" alignment="neutral" mime="text/plain" min="0" max="800k" ext=".txt"/>
+    <type id="1" alignment="good" mime="source/python" min="10k" max="500k" ext=".py"/>
+    <type id="2" alignment="neutral" mime="source/java" min="500k" max="1m" ext=".java"/>
+    <type id="3" alignment="good" mime="source/cpp" min="500k" max="1m" ext=".cpp"/>
+    <type id="4" alignment="good" mime="source/c" min="10k" max="500k" ext=".c"/>
+    <type id="5" alignment="evil" mime="source/csharp" min="50k" max="100k" ext=".cs"/>
+    <type id="6" alignment="neutral" mime="source/assembler" min="10" max="1m" ext=".asm"/>
+    <type id="7" alignment="neutral" mime="text/xml" min="10k" max="3m" ext=".xml"/>
+    <type id="8" alignment="neutral" mime="text/html" min="10k" max="100k" ext=".html"/>
+    <type id="9" alignment="neutral" mime="text/config" min="1k" max="2k" ext=".ini,.conf"/>
+
+    <!--application-->
+    <type id="10" alignment="evil" mime="application/exe" min="500k" max="10m" ext=".exe,.com"/>
+    <type id="11" alignment="good" mime="application/elf" min="50k" max="3m" ext=",.so,.o"/>
+    <type id="13" alignment="evil" mime="application/dll" min="500k" max="3m" ext=".dll"/>
+
+    <!--media-->
+    <type id="14" alignment="good" mime="audio/ogg" min="500k" max="15m" ext=".ogg"/>
+    <type id="15" alignment="evil" mime="audio/mpeg" min="1m" max="20m" ext=".mp3"/>
+    <type id="16" alignment="evil" mime="audio/wma" min="1m" max="3m" ext=".mp3"/>
+    <type id="17" alignment="good" mime="video/ogg" min="15m" max="500m" ext=".ogv"/>
+    <type id="18" alignment="neutral" mime="video/mkv" min="15m" max="20g" ext=".mkv"/>
+    <type id="19" alignment="evil" mime="video/wmw" min="15m" max="300m" ext=".wmw"/>
+    <type id="20" alignment="neutral" mime="image/jpg" min="100k" max="2m" ext=".jpg"/>
+    <type id="21" alignment="good" mime="image/png" min="300k" max="3m" ext=".png"/>
+    <type id="22" alignment="evil" mime="image/bmp" min="10k" max="1m" ext=".bmp"/>
+
+    <!--archives-->
+    <type id="23" alignment="neutral" mime="archive/zip" min="1m" max="1g" ext=".zip"/>
+    <type id="24" alignment="good" mime="archive/deb" min="1m" max="50m" ext=".deb"/>
+    <type id="25" alignment="evil" mime="archive/bad" min="10m" max="50m" ext=".dmg,.rar"/>
+    <type id="26" alignment="neutral" mime="archive/iso" min="700m" max="4.7g" ext=".iso"/>
+</types>
