@@ -4,6 +4,7 @@ import it.randomtower.engine.ME;
 import it.randomtower.engine.ResourceManager;
 import it.randomtower.engine.entity.Entity;
 import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 /**
@@ -13,8 +14,10 @@ import org.newdawn.slick.SlickException;
  * Time: 1:01 AM
  */
 public class Brick extends Entity {
-    public Brick(float x, float y) {
-        super(x, y);
+    public Brick(float x, float y, Image image) {
+        super(x, y, image);
+        centered = true;
+        setHitBox(-image.getWidth()/2, -image.getHeight()/2, image.getWidth(), image.getHeight());
     }
 
     @Override
@@ -22,9 +25,10 @@ public class Brick extends Entity {
         super.update(container, delta);
         if (collide("BALL", x, y) != null) {
             ME.remove(this);
+            ResourceManager.getSound("brick").play();
 
-            /*if (Math.random() > 0.5f) {*/
-            if (true) {
+            if (Math.random() > 0.75f) {
+            /*if (true) {*/
                 ScoreBonus bonus = new ScoreBonus(x,y, ResourceManager.getImage("bonus"));
                 ME.world.add(bonus);
             }

@@ -1,5 +1,6 @@
 package org.demoth.ark2.states;
 
+import it.randomtower.engine.ResourceManager;
 import it.randomtower.engine.World;
 import org.demoth.ark2.ArkanoidGame;
 import org.newdawn.slick.GameContainer;
@@ -28,6 +29,7 @@ public class MenuState extends World {
     @Override
     public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException {
         super.render(container, game, g);
+
         g.drawString(message, container.getWidth() / 2, container.getHeight() / 2);
     }
 

@@ -1,3 +1,6 @@
 fullscreen = 0
 width = 800
 height = 600
+debug = 1
+fps = 50
+vsync = 0

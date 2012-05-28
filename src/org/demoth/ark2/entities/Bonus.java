@@ -20,6 +20,7 @@ public abstract class Bonus extends Entity {
 
     protected Bonus(float x, float y, Image image) {
         super(x, y, image);
+        centered = true;
     }
 
     @Override

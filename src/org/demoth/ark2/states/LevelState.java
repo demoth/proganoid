@@ -30,11 +30,7 @@ public class LevelState extends World {
     @Override
     public void init(GameContainer container, StateBasedGame game) throws SlickException {
         super.init(container, game);    //To change body of overridden methods use File | Settings | File Templates.
-        ball = new Ball(200, 300);
-        ball.setGraphic(ResourceManager.getImage("ball"));
-        ball.setHitBox(0, 0, ball.getCurrentImage().getWidth(), ball.getCurrentImage().getHeight(), true);
-        ball.addType("BALL");
-        this.add(ball);
+
     }
 
     public LevelState(int id, GameContainer container) {
@@ -52,6 +48,7 @@ public class LevelState extends World {
     public void update(GameContainer container, StateBasedGame game, int delta) throws SlickException {
         super.update(container, game, delta);    //To change body of overridden methods use File | Settings | File Templates.
         if (ME.world.getNrOfEntities("BRICK") == 0 && ME.world.getNrOfEntities("BONUS") == 0) {
+            ResourceManager.getSound("win").play();
             game.enterState(ArkanoidGame.WIN_STATE, new FadeOutTransition(), new FadeInTransition());
         }
         if (ME.world.getNrOfEntities("BALL") == 0) {

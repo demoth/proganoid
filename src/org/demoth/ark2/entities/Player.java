@@ -21,7 +21,7 @@ public class Player extends Entity {
         super(x, y, image);
         this.centered = true;
         //this.setHitBox(image.getWidth() / 2, image.getHeight() / 2, image.getWidth() / 2, image.getHeight() / 2);
-        this.setHitBox(-image.getWidth()/2, 0, image.getWidth(), image.getHeight());
+        this.setHitBox(-image.getWidth()/2, -image.getHeight()/ 2, image.getWidth(), image.getHeight());
     }
 
     @Override
