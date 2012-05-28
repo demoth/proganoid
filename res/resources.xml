@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+    <basedir path="res/"/>
+    <image key="ball" file="ball.png"/>
+    <image key="paddle" file="paddle.png"/>
+    <image key="back" file="back.jpg"/>
+    <image key="brick" file="file.png"/>
+    <image key="bonus" file="bonus.png"/>
+
+    <unicodefont key="default" file="Orbitron-Regular.ttf" fontSize="20"/>
+
+    <sound key="bounce" file="31869__hardpcm__chip032.wav"/>
+    <sound key="win" file="32955__hardpcm__chip055.wav"/>
+    <sound key="brick" file="31873__hardpcm__chip036.wav"/>
+    <sound key="bonusPickup" file="32944__hardpcm__chip017.wav"/>
+ </resources>
